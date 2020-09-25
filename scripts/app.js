@@ -8,7 +8,7 @@ module.exports = () => {
     let windows = [];
 
     app.whenReady().then(() => {
-        if(!app.isDefaultProtocolClient('pixel') && app.isPackaged()) {
+        if(!app.isDefaultProtocolClient('pixel') && app.isPackaged) {
             app.setAsDefaultProtocolClient('pixel');
         }
 
